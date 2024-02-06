@@ -10,7 +10,7 @@ export const isFirefox =
   navigator.userAgent.indexOf("rv:") > 1 &&
   navigator.userAgent.indexOf("Gecko") > 1;
 
-export const APP_NAME = "Excalidraw";
+export const APP_NAME = "Whiteboard";
 
 export const DRAGGING_THRESHOLD = 10; // px
 export const LINE_CONFIRM_THRESHOLD = 8; // px
