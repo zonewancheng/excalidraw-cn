@@ -25,7 +25,7 @@ const Footer = ({
   showExitZenModeBtn: boolean;
   renderWelcomeScreen: boolean;
 }) => {
-  const { footerCenterTunnel, welcomeScreenHelpHintTunnel } = useTunnels();
+  const { welcomeScreenHelpHintTunnel } = useTunnels();
 
   const device = useDevice();
   const showFinalize =
@@ -70,7 +70,6 @@ const Footer = ({
           </Section>
         </Stack.Col>
       </div>
-      <footerCenterTunnel.Out />
       <div
         className={clsx("layer-ui__wrapper__footer-right zen-mode-transition", {
           "transition-right disable-pointerEvents": appState.zenModeEnabled,
