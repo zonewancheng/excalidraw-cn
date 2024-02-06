@@ -10,33 +10,7 @@ import { isDarwin, isFirefox, isWindows } from "../constants";
 
 const Header = () => (
   <div className="HelpDialog__header">
-    {/* <a
-      className="HelpDialog__btn"
-      href="https://github.com/excalidraw/excalidraw#documentation"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {t("helpDialog.documentation")}
-      <div className="HelpDialog__link-icon">{ExternalLinkIcon}</div>
-    </a> */}
-    <a
-      className="HelpDialog__btn"
-      href="https://korbinzhao.deno.dev"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {t("helpDialog.blog")}
-      <div className="HelpDialog__link-icon">{ExternalLinkIcon}</div>
-    </a>
-    <a
-      className="HelpDialog__btn"
-      href="https://forms.gle/UnihxVUz5WJVY3J2A"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {t("helpDialog.github")}
-      <div className="HelpDialog__link-icon">{ExternalLinkIcon}</div>
-    </a>
+   
   </div>
 );
 
@@ -120,7 +94,6 @@ export const HelpDialog = ({ onClose }: { onClose?: () => void }) => {
         title={t("helpDialog.title")}
         className={"HelpDialog"}
       >
-        <Header />
         <Section title={t("helpDialog.shortcuts")}>
           <ShortcutIsland
             className="HelpDialog__island--tools"
